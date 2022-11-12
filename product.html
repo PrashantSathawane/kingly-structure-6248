@@ -7,6 +7,93 @@
     <title>Document</title>
     <style>
 
+body{
+            padding: 0%;
+            margin: 0%;
+        }
+
+     input{
+        border: none;
+        border-bottom: 1px solid black;
+     }
+
+     #nav{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+        }
+
+        .class{
+            padding: 40px;
+        }
+
+        /* .second{
+            width: 50px;
+            height: 50px;
+        } */
+
+        #left{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid blue; */
+        
+
+        }
+
+
+        #left>img:nth-child(1){
+            width: 30px;
+            height: 30px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        #left>img:nth-child(2){
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            padding-left: 40px;
+        }
+
+        #right{
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid green; */
+            width: 50%;
+        }
+        #right>a{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            text-decoration: none;
+            color: gray;
+
+        }
+
+        #right>svg{
+            padding: 20px;
+            color: gray;
+            /* width:10%; */
+            /* height: 35px; */
+        }
+
+        #right>div{
+            padding-top: 20px;
+            
+        }
+      
+
+        #search>input{
+            border-bottom: 30px;
+            text-decoration: none;
+            color: black;
+            border-bottom: 30px;
+            width: 60px;
+            border: none;
+        }
+
+
+
         #main{
             text-align: center;
             
@@ -33,9 +120,7 @@
             display: flex;
         }
 
-        /* .double>div>p{
-            display: flex;
-        } */
+       
 
         #insta{
             padding-top: 100px;
@@ -63,6 +148,29 @@
     </style>
 </head>
 <body>
+
+      <!-- Nav Bar -->
+      <div id="nav">
+
+        <div id="left">
+            <img class="first"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapcnth53S-y1Og-rolIRgFN5p1npIcg2ooQ&usqp=CAU" alt="Menu">
+            <img class="second" src="Screenshot 2022-11-12 233147.png" alt="one Boutique">
+        </div>
+
+        <div id="right">
+
+            <div id="serach">
+             <input type="text" placeholder="SEARCH">  
+            </div>
+            
+            <a href=""> LOG IN</a>
+            <a href=""> HELP</a>
+            <svg class="cart" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="inherit" stroke="inherit"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 4.9V3.3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.6h4.8V12h-1V5.9H4.7v14H15v1H3.7v-16h4.8zm1-1.6a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1.6h-5V3.3z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17.4 23.4v-9h5.4v9l-2.705-2.673L17.4 23.4zm2.694-3.798L22 21.485V15.2h-3.8v6.28l1.894-1.878z"></path></svg>          
+        </div>
+
+    </div>
+
+
     
  <!-- Inner section of 1st image -->
  <div id="main">
