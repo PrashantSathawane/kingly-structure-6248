@@ -30,11 +30,6 @@
             padding: 40px;
         }
 
-        /* .second{
-            width: 50px;
-            height: 50px;
-        } */
-
         #left{
             display: flex;
             justify-content: space-between;
@@ -89,11 +84,52 @@
         #search>input{
             border-bottom: 30px;
             text-decoration: none;
-            color: black;
+             color: black;
             border-bottom: 30px;
             width: 60px;
             border: none;
+         }
+
+        .form{
+                display: flex;
         }
+            
+        #email{
+                padding-left: 70px;
+            }
+
+        #email>input{
+                padding: 20px;               
+        }
+
+        #email>p{
+                padding: 20px 0px;
+                
+        }
+
+        #email>button{
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .check {
+            display: inline-block;
+            }
+
+            #pass{
+                padding-left: 40px;
+            }
+
+            #pass>input{
+                padding: 20px 0px;
+            }
+
+            #pass>p{
+
+            }
 
     </style>
 
@@ -126,61 +162,69 @@
 
         <!-- LEFT DIV -->
 
-        <div class="form">
+<div class="form">
 
+    <div id="email">
         <input type="Email"  id="email" placeholder="E-MAIL">
             <br>
         <input id="" type="password" placeholder="PASSWORD" >
-        <br>
-        
-        
+            <br>        
         <input id="" type="text" placeholder="NAME" >
-        <br>
+            <br>
         <input id="" type="text" placeholder="ADDRESS" >
-        <br>
+            <br>
         <input id="" type="text" placeholder="LOCALITY" >
-        <br>
+            <br>
         <input id="" type="text" placeholder="STATE" >
-        <br>
+            <br>
         <p> +91  <input type="number" placeholder="TELEPHONE">  </p>
-        <br>
-        <input type="checkbox" <p>I WISH TO RECEIVE ONE BOUTIQUE NEWS ON MY E-MAIL</p> 
-        <br>
-        <input type="checkbox"    <P>I ACCEPT THE <a> PRIVACY STATEMENT</a></P> 
-        <br>
-        <button>CREATE ACCOUNT</button>
+            <br>
 
-    </div>
+            <div class="check">
+                <input type="checkbox"  <p>I WISH TO RECEIVE ONE BOUTIQUE NEWS ON MY E-MAIL</p> 
+                 
+            </div>
+       
+            <br>
+            <div class="check">
+                <input type="checkbox" <P>I ACCEPT THE <a> PRIVACY STATEMENT</a></P> 
+               
+            </div>
+         
+            <br>
+        <button onclick="createAccount">CREATE ACCOUNT</button>
+
+</div>
+       
 
     <!-- RIGHT DIV -->
 
-    <div>
-
-       
+    <div id="pass">
+      
         <input id="" type="password" placeholder="REPEAT PASSWORD" >
-        <br>
+            <br>
         <input id="" type="number" placeholder="PINCODE" >
-        <br>
+            <br>
         <input id="" type="text" placeholder="MORE INFO" >
-        <br>
+            <br>
         <input id="" type="text" placeholder="CITY" >
-        <br>
+            <br>
         <P>REGION <H6>INDIA</H6> </P>
 
     </div>
+
+</div>
         
 
-
-
-        
-
-
-
-        
-        
-
-
-    </div>
     
 </body>
 </html>
+
+<script>
+
+    function createAccount(){
+        
+    }
+
+
+</script>

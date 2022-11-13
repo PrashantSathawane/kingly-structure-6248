@@ -8,7 +8,7 @@
 
     <style>
 
-body{
+        body{
             padding: 0%;
             margin: 0%;
         }
@@ -93,9 +93,105 @@ body{
             border: none;
         }
 
+        .single{
+            padding-bottom: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .single>div>img{
+            height: 450px;
+            margin: auto;
+            align-items: center;
+        }
+
+        .double{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            /* border: 1px solid red; */
+            margin: auto;
+            gap: 50px;
+            height: 60%;
+            padding-bottom: 60px;
+        }
+
+       .double>div>img{
+        height: 450px;
+       }
+
+        .double>div>div>p{
+            font-size: 12px;
+            color: gray;
+        }
       
 
-        
+        #insta{
+            padding-top: 100px;
+            text-align: start;
+            padding-left: 40px;
+        }
+
+        #insta>a{
+            padding-right: 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: grey;
+
+        }
+
+        #footer{
+            display: flex;
+            justify-content: start;
+            width: 50%;
+            padding-top: 300px;
+            /* border: 1PX solid red; */
+
+        }
+
+        #footer>div{
+            /* border: 1px solid blue; */
+        }
+
+        #footer>div>h5{
+            padding-left: 10px;
+            text-align: center;
+        }
+
+        #footer>div>a{
+            text-decoration: none;
+            font-size: 12px;
+            color: grey;
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+            padding-bottom: 4px;
+           
+        }
+
+        #bottom{
+            padding-top: 200px;
+        }
+
+        #bottom>div{
+            padding-left: 97px;
+        }
+
+        #bottomEmail{
+        border: none;
+        border-bottom: 1px solid black;
+        width: 25%;
+        }
+
+        #para>p{
+            text-align: start;
+            padding-left: 100px;
+            font-size: 10px;
+            padding-top: 200px;
+            color: gray;
+            /* border: 1px solid red; */
+            padding-bottom: 50px;
+        }
 
       
 
@@ -132,55 +228,170 @@ body{
 
     <!-- mens product -->
 
-    <div id="mens">
+ <div id="mens">
 
         <!-- 1st -->
+    <div class="single">
         <div>
             <img src="https://static.zara.net/photos///2022/I/T/2/p/0551/702/401/2/w/315/0551702401_15_1_1.jpg?ts=1667994396160" alt="1st">
-        </div>
+        </div>    
+    </div>
 
         <!-- 2nd -->
+    <div class="single">
         <div>
             <img src="https://static.zara.net/photos///2022/I/T/2/p/0472/040/800/2/w/315/0472040800_15_1_1.jpg?ts=1667995805291" alt="2nd">
-        </div>
+        </div>       
+    </div>
 
         <!-- 3rd -->
-        <div>
-            <img src="https://static.zara.net/photos///2022/I/T/2/p/0391/842/600/2/w/315/0391842600_15_1_1.jpg?ts=1667994394434" alt="3rd">
-        </div>
+     <div class="double">
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/T/2/p/0130/044/707/2/w/429/0130044707_15_1_1.jpg?ts=1668164309366" alt="4th">
+            </div>
+
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/T/2/p/0130/044/717/2/w/429/0130044717_15_1_1.jpg?ts=1668164311454" alt="4th">
+            </div>
+     </div>   
 
         <!-- 4th -->
-            <div>
-                <img src="https://static.zara.net/photos///contents/cm/media-transformations/joinlife-ctx/joinlife-large.svg?ts=1611919362013" alt="4rd">
-            </div>
-                <div>
-                    <p>BASIC SCARF WITH FRINGING +4</p>
-                    <p>₹ 1,990.00</p>
-                </div>
         
+
+        <div class="single">
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/T/2/p/0391/842/600/2/w/315/0391842600_15_1_1.jpg?ts=1667994394434" alt="3rd">
+            </div>
+            
+        </div>
+
+
        <!-- 5th -->
        
-       <div>
-        <img src="https://static.zara.net/photos///2022/I/T/2/p/0097/535/400/2/w/315/0097535400_15_1_1.jpg?ts=1667994392853" alt="5th">
-       </div>
+       <div class="single">
+        <div>
+            <img src="https://static.zara.net/photos///2022/I/T/2/p/0097/535/400/2/w/315/0097535400_15_1_1.jpg?ts=1667994392853" alt="5th">
+        </div>
+    </div>
         
        <!-- 6th -->
-       <div>
-        <img src="https://static.zara.net/photos///2022/I/T/2/p/0070/634/401/2/w/563/0070634401_1_1_1.jpg?ts=1667994371606" alt="6th">
-       </div>
-
-       <div>
-        <img src="https://static.zara.net/photos///2022/I/T/2/p/0070/634/401/2/w/273/0070634401_15_1_1.jpg?ts=1667994393746" alt="6th">
-       </div>
+    <div class="double">
+        <div>
+            <img src="https://static.zara.net/photos///2022/I/T/2/p/0070/634/401/2/w/563/0070634401_1_1_1.jpg?ts=1667994371606" alt="6th">
+           </div>
+    
+           <div>
+            <img src="https://static.zara.net/photos///2022/I/T/2/p/0070/634/401/2/w/273/0070634401_15_1_1.jpg?ts=1667994393746" alt="6th">
+           </div>
+    </div>
+       
 
        <!-- 7th -->
-       <div>
-        <img src="https://static.zara.net/photos///2022/I/T/2/p/0551/702/402/2/w/315/0551702402_15_1_1.jpg?ts=1667994396701" alt="7th">
-       </div>
+    <div class="single">
+        <div>
+            <img src="https://static.zara.net/photos///2022/I/T/2/p/0551/702/402/2/w/315/0551702402_15_1_1.jpg?ts=1667994396701" alt="7th">
+        </div>
+       
+     </div>
+
+       <!-- 8th -->
+    <div class="double">
+        <div>
+            <img src="https://static.zara.net/photos///2022/I/T/2/p/0828/140/502/2/w/429/0828140502_15_1_1.jpg?ts=1668164310106" alt="8th">
+        </div>
+
+        <div>
+            <img src="https://static.zara.net/photos///2022/I/T/2/p/0828/130/703/2/w/429/0828130703_15_1_1.jpg?ts=1668164311499" alt="8th">
+        </div>
+    </div>
+
+        <!-- 9th -->
+
+    <div class="single">
+        <div>
+             <img src="https://static.zara.net/photos///2022/I/0/2/p/8281/406/505/2/w/429/8281406505_2_1_1.jpg?ts=1666103124652" alt="9th">
+        </div>
+    </div>
+
+</div>
+
+
+     <!-- NEWS SECTION -->
+
+     <div id="bottom">
+
+        <div>
+            <h4>JOIN OUR NEWSLETTER</h4>
+            <br>
+            <input id="bottomEmail" type="text" placeholder="ENTER YOUR EMAIL ADDRESS HERE">
+        </div>
+
+        <div id="insta">
+            <a href="https://www.instagram.com/zara/">INSTAGRAM</a>
+            <a href="https://www.facebook.com/Zara">FACEBOOK</a>
+            <a href="https://twitter.com/ZARA">TWITTER</a>
+            <a href="https://www.pinterest.es/zaraofficial/">PINTEREST</a>
+            <a href="https://www.youtube.com/user/zara">YOUTUBE</a>
+            <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv">SPOTIFY</a>
+        </div>
+
+
+        <div id="footer">
+
+            <div>
+                <h5>HELP</h5>
+                <a href="https://www.zara.com/in/en/help/shop-at-zaracom-h2.html">SHOP AT ZARA.COM</a>
+                <a href="https://www.zara.com/in/en/help/product-h9.html">PRODUCT</a>
+                <a href="https://www.zara.com/in/en/help/gift-card-h18.html">GIFT CARD</a>
+                <a href="https://www.zara.com/in/en/help/shipping-h31.html">PAYMENT</a>
+                <a href="https://www.zara.com/in/en/help/shipping-h31.html">SHIPPING</a>
+                <a href="https://www.zara.com/in/en/help/exchanges-and-returns-h36.html">EXCHANGES AND RETURNS</a>
+                <a href="https://www.zara.com/in/en/help/shops-and-company-h41.html">SHOPS AND COMPANY</a>
+                <a href="https://www.zara.com/in/en/help/clothes-collection-programme-h59.html">CLOTHES COLLECTION <br>
+                PROGRAMME</a>
+                <a href="https://www.zara.com/in/en/logon?forward">MY ACCOUNT</a>
+
+            </div>
+
+            <div>
+                <h5>FOLLOW US</h5>
+                <a href="https://www.zara.com/in/en/z-newsletter-nl1400.html?v1=11110">NEWSLETTER</a>
+                <a href="https://www.instagram.com/accounts/login/?next=%2Fzara%2F&source=omni_redirect">INSTAGRAM</a>
+                <a href="https://www.facebook.com/Zara">FACEBOOK</a>
+                <a href="https://twitter.com/ZARA">TWITTER</a>
+                <a href="https://www.pinterest.es/zaraofficial/">PINTEREST</a>
+                <a href="https://www.youtube.com/user/zara">YOUTUBE</a>
+            </div>
+
+            <div>
+                <h5>COMPANY</h5>
+                <a href="https://www.zara.com/in/en/z-company-corp1391.html?v1=11112">ABOUT US</a>
+                <a href="https://www.zara.com/in/en/z-join-life-mkt1399.html?v1=1471214">JOIN LIFE</a>
+                <a href="https://www.zara.com/in/en/z-company-corp1391.html?v1=18002">OFFICES</a>
+                <a href="https://www.zara.com/in/en/z-stores-st1404.html?v1=11108">STORES</a>
+                <a href="https://www.zara.com/in/en/z-job-corp1398.html?v1=18003">WORK WITH US</a>
+                
+            </div>
+
+            <div>
+                <h5>POLICIES</h5>
+                <a href="https://www.zara.com/in/en/z-job-corp1398.html?v1=18003">PRIVACY POLICY</a>
+                <a href="https://static.zara.net/static//pdfs/IN/terms-and-conditions/terms-and-conditions-en_IN-20220801.pdf">PURCHASE CONDITIONS</a>
+                <a href="https://static.zara.net/static/pdfs/IN/giftcard-conditions/giftcard-conditions-en_IN-20220809.pdf">GIFT CARD CONDITIONS</a>
+                <a href="https://www.zara.com/in/en/woman-new-in-l1180.html?v1=2111785&page=21">COOKIES SETTINGS</a>
+               
+            </div>
+
+        </div>
+
 
     </div>
 
-    
+    <div id="para">
+        <P>NAME AND ADDRESS OF THE MANUFACTURER: <br>
+           INDUSTRIA DE DISENO TEXTIL, S.A. (INDITEX, S.A.) <br> 
+           AVENIDA DE LA DIPUTACION, EDIFICIO INDITEX, 15142. ARTEIXO (A CORUNA). SPAIN </P>
+    </div>
 
     
 </body>

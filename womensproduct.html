@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+            padding: 0%;
+            margin: 0%;
+            font-family: sans-serif;
+        }
+
+     input{
+        border: none;
+        border-bottom: 1px solid black;
+        
+     }
+    #bottomEmail{
+        border: none;
+        border-bottom: 1px solid black;
+        width: 25%;
+     }
+
+     #nav{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+        }
+
+        .class{
+            padding: 40px;
+        }
+
+        #left{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid blue; */
+        }
+
+        #left>img:nth-child(1){
+            width: 30px;
+            height: 30px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        #left>img:nth-child(2){
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            padding-left: 40px;
+        }
+
+        #right{
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid green; */
+            width: 50%;
+        }
+        #right>a{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            text-decoration: none;
+            color: gray;
+        }
+
+        #right>svg{
+            padding: 20px;
+            color: gray;
+            /* width:10%; */
+            /* height: 35px; */
+        }
+
+        #right>div{
+            padding-top: 20px;
+        }
+      
+        #search>input{
+            border-bottom: 30px;
+            text-decoration: none;
+            color: black;
+            border-bottom: 30px;
+            width: 60px;
+            border: none;
+        }
+
+        #main{
+            text-align: center;
+            
+        }
+
+        #main>div>div>p{
+            color: gray;
+            font-size: 12px;
+        }
+        
+        
+       
+
+        #main>div>img{
+            height: 50%;
+            width: 30%;
+        } 
+        .single{
+            padding-bottom: 60px;
+        }
+
+        .single>div>img{
+            height: 450px;
+        }
+
+        .double{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            /* border: 1px solid red; */
+            margin: auto;
+            gap: 50px;
+            height: 60%;
+            padding-bottom: 60px;
+        }
+
+       .double>div>div>img{
+        height: 450px;
+       }
+
+        .double>div>div>p{
+            font-size: 12px;
+            color: gray;
+        }
+
+        .large{
+            padding-bottom: 60px;
+        }
+
+        .large>div>img{
+            width: 50%;
+        }
+
+
+        #insta{
+            padding-top: 100px;
+            text-align: start;
+            padding-left: 40px;
+        }
+
+        #insta>a{
+            padding-right: 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: grey;
+
+        }
+
+        #footer{
+            display: flex;
+            justify-content: start;
+            width: 50%;
+            padding-top: 300px;
+            /* border: 1PX solid red; */
+
+        }
+
+        #footer>div{
+            /* border: 1px solid blue; */
+        }
+
+        #footer>div>h5{
+            padding-left: 10px;
+            text-align: center;
+        }
+
+        #footer>div>a{
+            text-decoration: none;
+            font-size: 12px;
+            color: grey;
+            display: flex;
+            flex-direction: column;
+            padding-left: 25px;
+            padding-bottom: 4px;
+           
+        }
+        #newBasic{
+            text-align: center;
+            padding: 100px;
+            font-size: 40px;
+            
+        }
+        #newBasic>div>p{
+            font-size: 15px;
+
+        }
+        #one{
+            padding: 100px;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 200px;
+        }
+       
+        #bottom>div{
+            padding-left: 97px;
+        }
+
+        #para>p{
+            text-align: start;
+            padding-left: 100px;
+            font-size: 10px;
+            padding-top: 200px;
+            color: gray;
+            /* border: 1px solid red; */
+            padding-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+      <!-- Nav Bar -->
+      <div id="nav">
+
+        <div id="left">
+            <img class="first"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapcnth53S-y1Og-rolIRgFN5p1npIcg2ooQ&usqp=CAU" alt="Menu">
+            <img class="second" src="Screenshot 2022-11-12 233147.png" alt="one Boutique">
+        </div>
+
+        <div id="right">
+
+            <div id="serach">
+             <input type="text" placeholder="SEARCH">  
+            </div>
+            
+            <a href=""> LOG IN</a>
+            <a href=""> HELP</a>
+            <svg class="cart" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="inherit" stroke="inherit"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 4.9V3.3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.6h4.8V12h-1V5.9H4.7v14H15v1H3.7v-16h4.8zm1-1.6a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1.6h-5V3.3z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17.4 23.4v-9h5.4v9l-2.705-2.673L17.4 23.4zm2.694-3.798L22 21.485V15.2h-3.8v6.28l1.894-1.878z"></path></svg>          
+        </div>
+
+    </div>
+
+
+    
+ <!-- Inner section of 1st image -->
+ <div id="main">
+
+    <!-- 1st img -->
+   <div class="single">
+    <div>
+        <a href="womensInside.html"> <img  src="https://static.zara.net/photos///2022/I/0/1/p/8351/254/800/2/w/105/8351254800_1_1_1.jpg?ts=1667903197118" alt="1st">    </a>  
+    </div>
+
+    <div>
+         <p>SEMI-SHEER SEQUINED DRESS</p>
+         <p> ₹ 5,990.00 </p>
+    </div>
+       
+   </div>
+
+    <!-- 2nd img -->
+    <div class="double">
+
+        <div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/7556/706/099/2/w/220/7556706099_1_1_1.jpg?ts=1667561004635" alt="2nd">
+            </div>
+    
+            <div>
+                <p>ANIMAL PRINT BLAZER</p>
+                <p> ₹ 5,990.00 </p>
+            </div>
+        </div>
+       
+
+        <div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/7556/706/099/2/w/220/7556706099_1_1_1.jpg?ts=1667561004635" alt="2nd">
+            </div>
+    
+            <div>
+                <p>ANIMAL PRINT BLAZER</p>
+                <p> ₹ 5,990.00 </p>
+            </div>
+        </div>
+       
+           
+    </div>
+
+       <!-- 3rd img -->
+
+        <div class="single">
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/2075/226/506/2/w/316/2075226506_1_1_1.jpg?ts=1667566439820 " alt="3nd">
+            </div>
+           
+        <div>
+           <p>FLOWING SATIN SHIRT</p>
+           <p> ₹ 1,990.00 </p>
+        </div>
+    </div>
+
+    <!-- 4th img -->
+    <div class="double">
+
+        <div>
+            <div>
+                <img src=" https://static.zara.net/photos///2022/I/0/1/p/7803/616/800/17/w/220/7803616800_2_1_1.jpg?ts=1667562363390" alt="4th">
+            </div>
+           
+            <div>
+                <p>LACE-TRIMMED DRESS WITH ELASTIC STRAPS</p>
+                <p> ₹ 2,990.00 </p>
+             </div>
+        </div>
+       
+
+
+
+        <!-- side img  -->
+        <div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/8514/165/800/17/w/220/8514165800_2_2_1.jpg?ts=1667562366311 " alt="4th">
+            </div>
+    
+            <div>
+                <p>LACE-TRIMMED DRESS WITH ELASTIC STRAPS</p>
+                <p> ₹ 2,990.00 </p>
+            </div>
+        </div>
+       
+
+    </div>
+
+        <!-- 5th img -->
+        <div class="single">
+
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/3666/207/711/2/w/316/3666207711_2_1_1.jpg?ts=1667561022091" alt="5th">
+            </div>
+           
+        <div>
+            <p>SATIN TOP WITH FLORAL APPLIQUÉ</p>
+            <p> ₹ 2,990.00 </p>
+        </div>
+    </div>
+
+        <!-- 6th img -->
+        <div class="large">
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/0387/182/611/2/w/649/0387182611_9_3_1.jpg?ts=1667561028867" alt="6th">
+            </div>
+            
+        <div>
+            <p>VOLUMINOUS MINI DRESS</p>
+            <p> ₹ 6,990.00 </p>
+        </div>
+    </div>
+
+        <!-- 7th img -->
+        <div class="double">
+
+            <div>
+                <div>
+                    <img src="https://static.zara.net/photos///2022/I/0/1/p/8275/569/611/2/w/220/8275569611_1_1_1.jpg?ts=1667561007412" alt="7th">
+                </div>
+                
+                <div>
+                    <p>SATIN BLAZER WITH TIE DETAIL</p>
+                    <p> ₹ 6,990.00 </p>
+                </div>
+            </div>
+
+           
+
+        <!-- side img -->
+        <div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/8267/569/611/2/w/220/8267569611_2_3_1.jpg?ts=1667561006785" alt="7th">
+            </div>
+    
+            <div>
+                <p>STRAIGHT SATIN TROUSERS</p>
+                <p> ₹ 4,990.00 </p>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+     <!-- 8th img -->
+     <div class="single">
+        <div>
+            <img src="https://static.zara.net/photos///2022/I/0/1/p/9132/590/305/2/w/316/9132590305_1_1_1.jpg?ts=1667767235232" alt="9th">
+        </div>
+        
+    <div>
+        <p> SATIN CROP TOP </p>
+        <p> ₹ 2,990.00 </p>
+    </div>
+</div>
+
+        <!-- 9th img -->
+    <div class="double">
+
+         <div>
+                <div>
+                    <img src="https://static.zara.net/photos///2022/I/0/1/p/9225/864/800/2/w/148/9225864800_1_1_1.jpg?ts=1667903197219">
+                </div>
+                    
+                
+        
+                <div>
+                    <p> DRAPED VELVET DRESS </p>
+                    <p> ₹ 2,990.00 </p>
+                </div>
+            </div>
+           
+
+        <!-- side img -->
+        <div>
+            <div>
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/8837/289/700/2/w/148/8837289700_1_1_1.jpg?ts=1667836096053" alt="8th">
+            </div>
+    
+            <div>
+                <p> WOOL BLEND DOUBLE-BREASTE </p>
+                <p> ₹ 9,990.00 </p>
+            </div>
+    
+        </div>
+        
+    </div>
+
+       
+
+        <!-- 10th img -->
+        <div id="single">
+            <div >
+                <img src="https://static.zara.net/photos///2022/I/0/1/p/7901/713/800/2/w/649/7901713800_9_1_1.jpg?ts=1667565356018" alt="10th">
+            </div>
+
+            <div>
+                <P>FAUX LEATHER CORSETRY-INSPIRED JACKET</P>
+                <P>₹ 5,990.00</P>
+            </div>
+        </div>
+       
+    </div>
+    <br>
+
+        <!-- bottom info -->
+
+        <!-- NEW BASICS -->
+        <div id="newBasic">
+            <div>
+                <h1>NEW <br>BASICS</H1>
+            </div>
+    
+            <div>
+                <p>" I N V I S I B L E - S E A M S "</p>
+            </div>
+        </div>
+        
+
+        <!--  -->
+
+        <div id="one">
+            <h4> ONE BOUTIQUE WOMEN COLLECTION </h4>
+        </div>
+
+        <!-- NEWS SECTION -->
+
+        <div id="bottom">
+
+            <div>
+                <h4>JOIN OUR NEWSLETTER</h4>
+                <br>
+                <input id="bottomEmail" type="text" placeholder="ENTER YOUR EMAIL ADDRESS HERE">
+            </div>
+    
+            <div id="insta">
+                <a href="https://www.instagram.com/zara/">INSTAGRAM</a>
+                <a href="https://www.facebook.com/Zara">FACEBOOK</a>
+                <a href="https://twitter.com/ZARA">TWITTER</a>
+                <a href="https://www.pinterest.es/zaraofficial/">PINTEREST</a>
+                <a href="https://www.youtube.com/user/zara">YOUTUBE</a>
+                <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv">SPOTIFY</a>
+            </div>
+    
+    
+            <div id="footer">
+    
+                <div>
+                    <h5>HELP</h5>
+                    <a href="https://www.zara.com/in/en/help/shop-at-zaracom-h2.html">SHOP AT ZARA.COM</a>
+                    <a href="https://www.zara.com/in/en/help/product-h9.html">PRODUCT</a>
+                    <a href="https://www.zara.com/in/en/help/gift-card-h18.html">GIFT CARD</a>
+                    <a href="https://www.zara.com/in/en/help/shipping-h31.html">PAYMENT</a>
+                    <a href="https://www.zara.com/in/en/help/shipping-h31.html">SHIPPING</a>
+                    <a href="https://www.zara.com/in/en/help/exchanges-and-returns-h36.html">EXCHANGES AND RETURNS</a>
+                    <a href="https://www.zara.com/in/en/help/shops-and-company-h41.html">SHOPS AND COMPANY</a>
+                    <a href="https://www.zara.com/in/en/help/clothes-collection-programme-h59.html">CLOTHES COLLECTION <br>
+                    PROGRAMME</a>
+                    <a href="https://www.zara.com/in/en/logon?forward">MY ACCOUNT</a>
+    
+                </div>
+    
+                <div>
+                    <h5>FOLLOW US</h5>
+                    <a href="https://www.zara.com/in/en/z-newsletter-nl1400.html?v1=11110">NEWSLETTER</a>
+                    <a href="https://www.instagram.com/accounts/login/?next=%2Fzara%2F&source=omni_redirect">INSTAGRAM</a>
+                    <a href="https://www.facebook.com/Zara">FACEBOOK</a>
+                    <a href="https://twitter.com/ZARA">TWITTER</a>
+                    <a href="https://www.pinterest.es/zaraofficial/">PINTEREST</a>
+                    <a href="https://www.youtube.com/user/zara">YOUTUBE</a>
+                </div>
+    
+                <div>
+                    <h5>COMPANY</h5>
+                    <a href="https://www.zara.com/in/en/z-company-corp1391.html?v1=11112">ABOUT US</a>
+                    <a href="https://www.zara.com/in/en/z-join-life-mkt1399.html?v1=1471214">JOIN LIFE</a>
+                    <a href="https://www.zara.com/in/en/z-company-corp1391.html?v1=18002">OFFICES</a>
+                    <a href="https://www.zara.com/in/en/z-stores-st1404.html?v1=11108">STORES</a>
+                    <a href="https://www.zara.com/in/en/z-job-corp1398.html?v1=18003">WORK WITH US</a>
+                    
+                </div>
+    
+                <div>
+                    <h5>POLICIES</h5>
+                    <a href="https://www.zara.com/in/en/z-job-corp1398.html?v1=18003">PRIVACY POLICY</a>
+                    <a href="https://static.zara.net/static//pdfs/IN/terms-and-conditions/terms-and-conditions-en_IN-20220801.pdf">PURCHASE CONDITIONS</a>
+                    <a href="https://static.zara.net/static/pdfs/IN/giftcard-conditions/giftcard-conditions-en_IN-20220809.pdf">GIFT CARD CONDITIONS</a>
+                    <a href="https://www.zara.com/in/en/woman-new-in-l1180.html?v1=2111785&page=21">COOKIES SETTINGS</a>
+                   
+                </div>
+    
+            </div>
+
+
+        </div>
+
+        <div id="para">
+            <P>NAME AND ADDRESS OF THE MANUFACTURER: <br>
+               INDUSTRIA DE DISENO TEXTIL, S.A. (INDITEX, S.A.) <br> 
+               AVENIDA DE LA DIPUTACION, EDIFICIO INDITEX, 15142. ARTEIXO (A CORUNA). SPAIN </P>
+        </div>
+
+
+</body>
+</html>

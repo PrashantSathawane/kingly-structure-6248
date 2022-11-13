@@ -93,7 +93,102 @@
             width: 60px;
             border: none;
         }
+
+        .form{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #login{
+            padding-top: 50px;
+        }
         
+        #login>p{
+            color: gray;
+            font-size: 12px;
+        }
+        #login>button{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 40px;
+        }
+
+        #register{
+            padding-top: 50px;
+        }
+
+        #register>p{
+            font-size: medium;
+            color: gray;
+        }
+
+            #register>button{
+                background-color: black;
+                color: white;
+                width: 60%;
+                height: 40px;
+                margin-top: 20px;
+               
+            }
+
+            #insta{
+            padding-top: 100px;
+            text-align: start;
+            padding-left: 40px;
+        }
+
+        #insta>a{
+            padding-right: 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: grey;
+
+        }
+
+        #footer{
+            display: flex;
+            justify-content: start;
+            width: 50%;
+            padding-top: 300px;
+            /* border: 1PX solid red; */
+
+        }
+
+        #footer>div{
+            /* border: 1px solid blue; */
+        }
+
+        #footer>div>h5{
+            padding-left: 25px;
+            text-align: center;
+        }
+
+        #footer>div>a{
+            text-decoration: none;
+            font-size: 12px;
+            color: grey;
+            display: flex;
+            flex-direction: column;
+            padding-left: 50px;
+            padding-bottom: 4px;
+        }
+        
+        #bottom>div{
+            padding-left: 97px;
+        }
+
+        #para>p{
+            text-align: start;
+            padding-left: 50px;
+            font-size: 10px;
+            padding-top: 200px;
+            color: gray;
+            /* border: 1px solid red; */
+            padding-bottom: 50px;
+        }
+
+
         </style>
 
 
@@ -124,18 +219,25 @@
 
         <!-- LOG IN  -->
 
-      <div class="form">
-        <h1>LOG IN</h1>
-        <input type="email" placeholder="E-Mail"> 
-        <BR></BR>
-        <input type="password" placeholder="PASSWORD">
-         <BR></BR>
-        <button> LOG IN </button> 
+    <div class="form">
 
-        <p> HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+        <div id="login">
+            <h1>LOG IN</h1>
+            <input style="width: 100%;" type="email" placeholder="E-Mail" id="email"> 
+            <BR></BR>
+            <input style="width:100% ;" type="password" placeholder="PASSWORD" id="pass">
+             <BR></BR>
+            <p> HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+            <br>
+            <button  onclick="login()"> LOG IN </button>
 
-        <P>DON'T HAVE AN ACCOUNT? <a href=""> REGISTER</a></P>
-      </div>
+        </div>
+
+        <div >
+            <p id="length"> </p>
+        </div>
+        
+      
 
 
 
@@ -146,21 +248,106 @@
         <div id="register">
 
             <div>
-                <h3>REGISTER</h3>
+                <h1>REGISTER</h1>
             </div>
 
-            <p> IF YOU STILL DON'T HAVE A <b>ZARA.COM</b>  ACCOUNT, USE <br> THIS OPTION TO ACCESS THE REGISTRATION FORM. <br> <br>
+            <p> IF YOU STILL DON'T HAVE A <b style="color: black;">ONE BOUTIQUE.COM</b>  ACCOUNT, <br> USE  THIS OPTION TO ACCESS THE REGISTRATION FORM. <br> <br>
 
-                BY GIVING US YOUR DETAILS, PURCHASING IN <br> <b> ZARA.COM </b>  WILL BE FASTER AND AN ENJOYABLE <br> EXPERIENCE. </p>
+                BY GIVING US YOUR DETAILS, PURCHASING IN <br> <b style="color: black;"> ONE BOUTIQUE.COM </b>  WILL BE FASTER AND AN ENJOYABLE <br> EXPERIENCE. </p>
 
-                <div>
-                    <button>CREATE ACCOUNT</button>
-                </div>
+                <button> CREATE ACCOUNT </button>
+               
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div id="footer">
+    
+        <div>
+            <h5>HELP</h5>
+            <a href="https://www.zara.com/in/en/help/shop-at-zaracom-h2.html">SHOP AT ZARA.COM</a>
+            <a href="https://www.zara.com/in/en/help/product-h9.html">PRODUCT</a>
+            <a href="https://www.zara.com/in/en/help/gift-card-h18.html">GIFT CARD</a>
+            <a href="https://www.zara.com/in/en/help/shipping-h31.html">PAYMENT</a>
+            <a href="https://www.zara.com/in/en/help/shipping-h31.html">SHIPPING</a>
+            <a href="https://www.zara.com/in/en/help/exchanges-and-returns-h36.html">EXCHANGES AND RETURNS</a>
+            <a href="https://www.zara.com/in/en/help/shops-and-company-h41.html">SHOPS AND COMPANY</a>
+            <a href="https://www.zara.com/in/en/help/clothes-collection-programme-h59.html">CLOTHES COLLECTION <br>
+            PROGRAMME</a>
+            <a href="https://www.zara.com/in/en/logon?forward">MY ACCOUNT</a>
 
         </div>
-        
 
+        <div>
+            <h5>FOLLOW US</h5>
+            <a href="https://www.zara.com/in/en/z-newsletter-nl1400.html?v1=11110">NEWSLETTER</a>
+            <a href="https://www.instagram.com/accounts/login/?next=%2Fzara%2F&source=omni_redirect">INSTAGRAM</a>
+            <a href="https://www.facebook.com/Zara">FACEBOOK</a>
+            <a href="https://twitter.com/ZARA">TWITTER</a>
+            <a href="https://www.pinterest.es/zaraofficial/">PINTEREST</a>
+            <a href="https://www.youtube.com/user/zara">YOUTUBE</a>
+        </div>
+
+        <div>
+            <h5>COMPANY</h5>
+            <a href="https://www.zara.com/in/en/z-company-corp1391.html?v1=11112">ABOUT US</a>
+            <a href="https://www.zara.com/in/en/z-join-life-mkt1399.html?v1=1471214">JOIN LIFE</a>
+            <a href="https://www.zara.com/in/en/z-company-corp1391.html?v1=18002">OFFICES</a>
+            <a href="https://www.zara.com/in/en/z-stores-st1404.html?v1=11108">STORES</a>
+            <a href="https://www.zara.com/in/en/z-job-corp1398.html?v1=18003">WORK WITH US</a>
+            
+        </div>
+
+        <div>
+            <h5>POLICIES</h5>
+            <a href="https://www.zara.com/in/en/z-job-corp1398.html?v1=18003">PRIVACY POLICY</a>
+            <a href="https://static.zara.net/static//pdfs/IN/terms-and-conditions/terms-and-conditions-en_IN-20220801.pdf">PURCHASE CONDITIONS</a>
+            <a href="https://static.zara.net/static/pdfs/IN/giftcard-conditions/giftcard-conditions-en_IN-20220809.pdf">GIFT CARD CONDITIONS</a>
+            <a href="https://www.zara.com/in/en/woman-new-in-l1180.html?v1=2111785&page=21">COOKIES SETTINGS</a>
+           
+        </div>
+
+    </div>
+
+
+</div>
+
+<div id="para">
+    <P>NAME AND ADDRESS OF THE MANUFACTURER: <br>
+       INDUSTRIA DE DISENO TEXTIL, S.A. (INDITEX, S.A.) <br> 
+       AVENIDA DE LA DIPUTACION, EDIFICIO INDITEX, 15142. ARTEIXO (A CORUNA). SPAIN </P>
+</div>
 
     
 </body>
 </html>
+
+<script>
+
+    // function myFunction(){
+    //     let x = document.getElementById("pass");
+
+    //     if (x.type ==="PASSWORD"){
+    //         x.type = "text"
+    //     } else {
+    //         x.type = "PASSWORD"
+    //     }
+    // }
+
+    function login(){
+        let password=document.getElementById("pass")
+        let length = document.getElementById("length")
+
+        if (password.value.length >=8){
+            alert ("Log In Succesfull")
+            window.location.replace("newpage.html")
+            return false
+
+        } else{
+            alert("Log In Failed")
+        }
+    }
+
+
+</script>

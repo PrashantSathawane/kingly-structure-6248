@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+body{
+            padding: 0%;
+            margin: 0%;
+        }
+
+     input{
+        border: none;
+        border-bottom: 1px solid black;
+     }
+
+     #nav{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+        }
+
+        .class{
+            padding: 40px;
+        }
+
+        /* .second{
+            width: 50px;
+            height: 50px;
+        } */
+
+        #left{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid blue; */
+        
+
+        }
+
+
+        #left>img:nth-child(1){
+            width: 30px;
+            height: 30px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        #left>img:nth-child(2){
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            padding-left: 40px;
+        }
+
+        #right{
+            display: flex;
+            justify-content: space-around;
+            /* border: 1px solid green; */
+            width: 50%;
+        }
+        #right>a{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            text-decoration: none;
+            color: gray;
+
+        }
+
+        #right>svg{
+            padding: 20px;
+            color: gray;
+            /* width:10%; */
+            /* height: 35px; */
+        }
+
+        #right>div{
+            padding-top: 20px;
+            
+        }
+      
+
+        #search>input{
+            border-bottom: 30px;
+            text-decoration: none;
+            color: black;
+            border-bottom: 30px;
+            width: 60px;
+            border: none;
+        }
+
+
+            #container{
+                display: flex;
+                justify-content: space-evenly;
+
+            }
+
+            #container>div{
+                /* border: 1px solid red; */
+            }
+
+            #left{
+                height: auto;
+                width: auto;
+                padding-top: 50px;
+            }
+            #grey>p{
+                color: grey;
+            }
+            
+
+            #left>div>a{
+                color: black;
+            }
+
+            #center{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+            }
+
+            #center>div>img{
+                width: 100%;
+                height: 80%;
+                /* margin: auto; */
+                align-items: center;
+
+            }
+
+            #right{
+                padding-top: 30px;
+            }
+
+            #right>div>p{
+                font-size: 12px;
+                color: gray;
+            }
+           
+                #right>div>button{
+                    background-color: black;
+                    color: white;
+                    width: 100%;
+                    height: 40px;
+                    text-align: center;
+                    
+                }
+            
+    </style>
+</head>
+<body>
+
+         <!-- Nav Bar -->
+         <div id="nav">
+
+            <div id="left">
+                <img class="first"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapcnth53S-y1Og-rolIRgFN5p1npIcg2ooQ&usqp=CAU" alt="Menu">
+                <img class="second" src="Screenshot 2022-11-12 233147.png" alt="one Boutique">
+            </div>
+    
+            <div id="right">
+    
+                <div id="serach">
+                 <input type="text" placeholder="SEARCH">  
+                </div>
+                
+                <a href=""> LOG IN</a>
+                <a href=""> HELP</a>
+                <svg class="cart" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="inherit" stroke="inherit"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 4.9V3.3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.6h4.8V12h-1V5.9H4.7v14H15v1H3.7v-16h4.8zm1-1.6a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1.6h-5V3.3z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17.4 23.4v-9h5.4v9l-2.705-2.673L17.4 23.4zm2.694-3.798L22 21.485V15.2h-3.8v6.28l1.894-1.878z"></path></svg>          
+            </div>
+    
+        </div>
+ 
+        <!--Product Details  -->
+        <div id="container">
+
+            <div id="left">
+                <div>
+                    <h4>MATERIALS, CARE AND <br> ORIGIN </h4>
+                    <h6>MATERIALS</h6>
+                    <div id="grey">
+                        <p>We work with monitoring <br> programmes to ensure compliance <br> with safety, health and quality <br> standards for our products.<br> <br>
+
+                            The Green to Wear 2.0 standard <br> aims to minimise the <br> environmental impact of textile <br> manufacturing. To that end, we <br> have developed Inditex’s The List <br> programme, which helps</p>
+                    </div>
+                    
+                      <a href="">View more</a>      
+                </div>
+            </div>
+
+            <div id="center">
+                <div>
+                    <img src="https://static.zara.net/photos///2022/I/0/1/p/8351/254/800/2/w/750/8351254800_1_1_1.jpg?ts=1667903197118" alt="1st">
+                </div>
+                
+            </div>
+
+            <div id="right">
+                <div>
+                    <h3> SEMI-SHEER SEQUINED DRESS </h3>
+                    <p> Midi dress with a round neck and long sleeves. <br> Lining. Buttoned opening at the back. </p>
+                    <p>BLACK | 8351/254</p>
+                    <P> ₹ 5,990.00 </P>
+                    <P>MRP incl. of all taxes</P>
+                    <hr>
+                    <P>XS</P>
+                    <P>S</P>
+                    <P>M</P>
+                    <P>L</P>
+                    <P>XL</P>
+                    <hr>
+                    <P>FIND YOUR SIZE</P>
+                    <button>ADD TO CART</button>
+                    <BR></BR>
+                    <P>CHECK IN-STORE AVAILABILITY </P>
+                    <P>DELIVERY, EXCHANGE AND RETURN</P>
+
+                </div>
+            </div>
+
+        </div>
+
+
+</body>
+</html>
