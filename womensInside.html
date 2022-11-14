@@ -96,25 +96,36 @@ body{
 
             #container{
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
 
             }
 
             #container>div{
-                /* border: 1px solid red; */
+                border: 1px solid red;
+                width: 600px;
+                height: 600px;
+                /* margin: auto; */
             }
 
-            #left{
-                height: auto;
+            #first{
+                /* height: auto; */
                 width: auto;
                 padding-top: 50px;
+                /* text-align: center;
+                align-items: center; */
+
+            }
+
+            #first>div{
+                text-align: center;
+                align-items: center;
             }
             #grey>p{
                 color: grey;
             }
             
 
-            #left>div>a{
+            #first>div>a{
                 color: black;
             }
 
@@ -179,7 +190,7 @@ body{
         <!--Product Details  -->
         <div id="container">
 
-            <div id="left">
+            <div id="first">
                 <div>
                     <h4>MATERIALS, CARE AND <br> ORIGIN </h4>
                     <h6>MATERIALS</h6>
